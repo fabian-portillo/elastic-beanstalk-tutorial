@@ -14,12 +14,12 @@ after_deploy:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
+  access_key_id: $ACCESSKEYID  #Se debe de cambiar 
   secret_access_key:
-    secure: "$SECRETACCESSKEY"
-  region: "ca-central-1"  
-  app: "elastic-beanstalk-tutorial"
-  env: "elastic-beanstalk-tutorial-dev"
-  bucket_name: "elasticbeanstalk-ca-central-1-882371129764"
+    secure: "$SECRETACCESSKEY"  #Se debe de cambiar 
+  region: "ca-central-1"    #Se debe de cambiar 
+  app: "elastic-beanstalk-tutorial"  #Se debe de cambiar 
+  env: "elastic-beanstalk-tutorial-dev"  #Se debe de cambiar 
+  bucket_name: "elasticbeanstalk-ca-central-1-882371129764" #Se debe de cambiar 
   on:
     branch: master
